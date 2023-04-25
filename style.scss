@@ -15,8 +15,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 601px);
+    padding-right: calc(50% - 601px);
 }
 
 .title {
@@ -72,6 +72,7 @@ body {
     background-color: #000915;
     display: flex;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .item {
@@ -112,3 +113,4 @@ body {
         background-size: cover;
     }
 }
+@import 'mobile';
