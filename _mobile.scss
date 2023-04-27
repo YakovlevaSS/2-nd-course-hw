@@ -1,8 +1,21 @@
 @media (max-width: 767px) {
     .center {
-        padding-left: calc(50% - 300px);
-        padding-right: calc(50% - 300px);  
+        padding-left: calc(50% - 171px);
+        padding-right: calc(50% - 171px);
     }
+
+    .heading {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+
     .title {
         background-image: url(img/main_mob.jpg);
         height: 735px;
@@ -11,25 +24,44 @@
         align-items: center;
 
         &__heading {
-            font-size: 32px;
-            line-height: 39px;
-            text-align: center;
             padding-top: 238px;
         }
 
         &__text {
-            font-size: 14px;
-            line-height: 22px;
-            text-align: center;
             margin-bottom: 32px;
+            width: auto;
         }
     }
+
     .item-box {
         justify-content: center;
     }
+
     .item {
         width: 343px;
         padding-left: 14px;
         padding-right: 14px;
+    }
+
+    .game1 {
+        padding-top: 51px;
+        padding-bottom: 85px;
+
+        &__info {
+            align-items: center;
+        }
+
+        &__text {
+            width: auto;
+        }
+
+        &__button {
+            margin-bottom: 64px;
+        }
+    }
+
+    svg {
+        width: 344px;
+        height: 236px;
     }
 }
