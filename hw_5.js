@@ -1,4 +1,3 @@
-/*
 //task 1
 function compareNum(a,b) {
     if (a <= b) {
@@ -68,7 +67,6 @@ let checkNumber = function () {
     }
 }
 checkNumber()
-*/
 //task 7
 const circle1 = {
     radius: 5,
@@ -92,5 +90,4 @@ console.log(circle1.getArea());
 console.log(circle1.getPerimetr());
 console.log(circle2.getArea());
 console.log(circle2.getPerimetr());
-//task 8
 
