@@ -140,9 +140,22 @@ body {
         padding-bottom: 239px;
     }
 
+    &_3 {
+        padding-top: 276px;
+        padding-bottom: 288px;
+        background-image: url(img/unsplash_iO0I6-mhDEY.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     &__info {
         display: flex;
         flex-direction: column;
+
+        &_3 {
+            align-items: center;
+        }
     }
 
     &__heading {
@@ -169,6 +182,10 @@ body {
         &_2 {
             width: 588px;
         }
+
+        &_3 {
+            text-align: center;
+        }
     }
 
     &__button {
@@ -191,6 +208,22 @@ body {
         }
     }
 
+}
+
+.footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #000915;
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+    }
 }
 
 @import 'mobile'
