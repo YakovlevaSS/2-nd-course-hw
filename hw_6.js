@@ -43,3 +43,51 @@ const strResult = str.split('').reverse().join('')
 console.log(strResult);
 
 //Task 9
+const insertedArr = [[1, 2, 3,], [4, 5, 6]];
+const newArr = insertedArr.flat(1);
+console.log(newArr);
+
+//Task 10
+const bigArr = [1, 3, 4, 8, 9, 10];
+for (let index = 0; index < bigArr.length - 1; index++) {
+    alert(bigArr[index] + bigArr[index + 1])
+}
+
+//Task 11
+function getSquare(numbs) {
+    return numbs.map((el) => el ** 2);
+}
+console.log(getSquare([2, 13, 26, 4]));
+
+//Task 12
+function getLengthWords(words) {
+    return words.map((el) => el.length);
+}
+console.log(getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']));
+
+//Task 13
+function filterPositive(array) {
+    let result = array.filter((el) => el < 0);
+    console.log(result);
+}
+filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
+filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
+
+//Task 14
+let RandomArray = [];
+for (let i = 0; i < 10; i += 1) { 
+    RandomArray.push(Math.round(Math.random()*10));
+  }
+console.log(RandomArray);
+
+let evenRandomArray = RandomArray.filter((el) => el % 2 == 0);
+console.log(evenRandomArray);
+
+//Task 15
+let RandomArray2 = [];
+for (let i = 0; i < 6; i += 1) { 
+    RandomArray2.push(Math.round(Math.random()*9 + 1));
+  }
+  console.log(RandomArray2);
+  let arithmeticMean = (RandomArray2.reduce((sum, current) => sum + current, 0))/RandomArray2.length;
+  console.log(arithmeticMean);
