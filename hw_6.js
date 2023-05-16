@@ -52,7 +52,7 @@ console.log(strResult);
 
 //Task 9
 const insertedArr = [[1, 2, 3,], [4, 5, 6]];
-const newArr = insertedArr.flat(1);
+const newArr = insertedArr.flat();
 console.log(newArr);
 
 //Task 10
@@ -82,20 +82,20 @@ filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
 filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
 
 //Task 14
-let RandomArray = [];
+let randomArray = [];
 for (let i = 0; i < 10; i += 1) {
-    RandomArray.push(Math.round(Math.random() * 10));
+    randomArray.push(Math.round(Math.random() * 10));
 }
-console.log(RandomArray);
+console.log(randomArray);
 
-let evenRandomArray = RandomArray.filter((el) => el % 2 == 0);
+let evenRandomArray = randomArray.filter((el) => el % 2 == 0);
 console.log(evenRandomArray);
 
 //Task 15
-let RandomArray2 = [];
+let randomArray2 = [];
 for (let i = 0; i < 6; i += 1) {
-    RandomArray2.push(Math.round(Math.random() * 9 + 1));
+    randomArray2.push(Math.round(Math.random() * 9 + 1));
 }
-console.log(RandomArray2);
-let arithmeticMean = (RandomArray2.reduce((sum, current) => sum + current, 0)) / RandomArray2.length;
+console.log(randomArray2);
+let arithmeticMean = (randomArray2.reduce((sum, current) => sum + current, 0)) / randomArray2.length;
 console.log(arithmeticMean);
