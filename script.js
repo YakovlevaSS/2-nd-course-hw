@@ -14,3 +14,19 @@ function defineTimeOfYear() {
         console.log('Осень');
     }
 }
+function checkWords() {
+    arrayFruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    arrayFruits = arrayFruits.sort(() => Math.random() - 0.5);
+    alert(arrayFruits);
+    let firstWordUser = prompt('Чему равнялся первый элемент массива?');
+    let endWordUser = prompt('Чему равнялся последний элемент массива?');
+    let firstWord = arrayFruits[0];
+    let endWord = arrayFruits[arrayFruits.length - 1];
+if (firstWord.toLowerCase() === firstWordUser.toLowerCase() && endWord.toLowerCase() === endWordUser.toLowerCase()) {
+    alert('Поздравляем! Вы угадали оба слова.');
+} else if (firstWord.toLowerCase() != firstWordUser.toLowerCase() && endWord.toLowerCase() != endWordUser.toLowerCase()) {
+    alert('Вы ответили неверно');
+} else {
+alert('Вы были близки к победе!')
+}
+}
