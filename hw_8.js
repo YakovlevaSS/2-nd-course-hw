@@ -1,4 +1,3 @@
-/*
 //Task 1
 const people = [
     { name: 'Глеб', age: 29 },
@@ -63,8 +62,6 @@ function delayForSecond(callback) {
 delayForSecond(function () {
     console.log('Привет, Глеб!');
 })
-*/
-
 //Task 5
 function delayForSecond(cb) {
     setTimeout(() => {
@@ -73,9 +70,7 @@ function delayForSecond(cb) {
 
     }, 1000)
 }
-
-// Функция sayHi выводит в консоль приветствие для указанного имени
 function sayHi (name) {
     console.log(`Привет, ${name}!`);
 }
-delayForSecond( setTimeout(() =>sayHi('Глеб'), 2000)) ;
+delayForSecond(() =>sayHi('Глеб'), 2000);
